@@ -1,8 +1,10 @@
-def linear(n,num):
-    if (n<1 or n>num):
+def negative():
+    number=int(input())
+    if number<0:
+        print("Number -ve")
         return
-    print(n)
-    linear(n-1,num)
-    print(n)
-n=int(input("Enter a number: "))
-linear(n,n)
+    else:
+        print("Number +ve")
+        negative()
+negative()
+    
